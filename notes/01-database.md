@@ -13,6 +13,13 @@
 
 - [AlgoMaster: 15 Types of Databases and When to Use Them](https://blog.algomaster.io/p/15-types-of-databases)
 
+## ✍️ In my own words
+
+<!-- Write this yourself BEFORE reading the polished notes or asking AI.
+     Pretend you're explaining it to a teammate in 30 seconds. 2–3 sentences. -->
+
+_✏️ To be written by me._
+
 ## 🗺️ Diagram
 
 ```mermaid
@@ -95,12 +102,52 @@ flowchart TD
 - **S3 (Simple Storage Service)** for blobs and data lakes; **Redshift** for analytics on large structured data.
 - **OpenSearch** for text and vector search; **Neptune** for graphs; **Timestream** for time-series.
 
+## 🛠️ Try it
+
+- [ ] Task: create a DynamoDB table in the AWS console (free tier), add 3 items, and look one up by its key. Then do the same lookup in a small SQLite or MySQL table.
+- What I saw:
+
 ## 🎤 Interview one-liner
 
 > "I choose a database by its data model and access pattern. For structured data with relationships and transactions, I default to a relational database like PostgreSQL. If I only need fast lookups by key at large scale, I'd use a key-value store like DynamoDB, and I'd add specialized stores where they fit: Redis for caching, Elasticsearch for search, S3 for files. At Prime Video I moved service metadata from S3 to DynamoDB because the data changed one item at a time, which item-level writes handle much better."
+
+## 🧠 Self-check
+
+1. A bank needs every money transfer to fully succeed or fully fail. Which database type, and why?
+   <details><summary>Answer</summary>
+
+   Relational. It supports ACID transactions, so a transfer never half-completes.
+
+   </details>
+
+2. You need to store user sessions and read them by session ID in under a millisecond. What fits best?
+   <details><summary>Answer</summary>
+
+   A key-value or in-memory store like Redis or DynamoDB: lookups by a single key are very fast.
+
+   </details>
+
+3. Where should product images go, and what goes in the database?
+   <details><summary>Answer</summary>
+
+   The images go in blob storage like S3. The database keeps only the image's link and metadata.
+
+   </details>
+
+## 🔗 Related topics
+
+- [02. Horizontal vs Vertical Scaling](02-horizontal-vs-vertical-scaling.md)
+- 06. SQL vs NoSQL (coming soon)
+- 10. Database Sharding (coming soon)
 
 ## ❓ Questions I still have
 
 - How do DynamoDB partition keys and sort keys work, and how do I choose them?
 - When does a relational database need sharding? (See topic 10.)
 - What exactly is "eventual consistency", and when is it acceptable? (See topic 08.)
+
+## 🔁 Review log
+
+| Date | What I added or changed |
+|---|---|
+| 2026-11-06 | First notes |
