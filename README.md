@@ -2,60 +2,59 @@
 
 My notes from learning system design, one topic at a time. Each note is short and simple: what it is, examples, when to use it, and the trade-offs.
 
-**How I use this repo:** read a topic, copy [the note template](TEMPLATE.md) into the `notes` folder, fill it in, then tick the box below. Terms are collected in the [glossary](GLOSSARY.md).
+**How I use this repo:** read a topic, copy [the note template](TEMPLATE.md) into the `notes` folder, fill it in, then add it to the learning log below. Terms are collected in the [glossary](GLOSSARY.md).
 
 > [!NOTE]
 > **How these notes are made:** I write the "In my own words" sections, key takeaways and "Try it" results myself. AI helps me organize, format and draw diagrams.
 
-## 📊 Tracker
+## 📅 Learning log
 
-**Progress:** `▓▓░░░░░░░░░░` **2 of 12 fundamentals done** · click a section to open or close it
+What I learned and when, newest first. **Still to finish** lists the parts of a note I haven't done yet; it's empty once the note is complete.
 
-<details open>
-<summary><b>📋 To do (10)</b></summary>
+| Date | Topic | Still to finish |
+|---|---|---|
+| 2026-11-06 | [Horizontal vs Vertical Scaling](notes/horizontal-vs-vertical-scaling.md) | ✍️ In my own words · 🧪 Example from my work · 🛠️ Try it |
+| 2026-11-06 | [Database Types](notes/database-types.md) | ✍️ In my own words · 🛠️ Try it |
 
-- [ ] 03 · Caching · [Caching article](https://lnkd.in/gC9piQbJ)
-- [ ] 04 · Distributed Caching · [Distributed caching article](https://lnkd.in/g7WKydNg)
-- [ ] 05 · Load Balancing · [Load balancing article](https://lnkd.in/gQaa8sXK)
-- [ ] 06 · SQL vs NoSQL · [SQL vs NoSQL article](https://lnkd.in/g3WC_yxn)
-- [ ] 07 · Database Scaling · [Database scaling article](https://lnkd.in/gAXpSyWQ)
-- [ ] 08 · Data Replication · [Data replication article](https://lnkd.in/gVAJxTpS)
-- [ ] 09 · Data Redundancy · [Data redundancy article](https://lnkd.in/gNN7TF7n)
-- [ ] 10 · Database Sharding · [Database sharding article](https://lnkd.in/gMqqc6x9)
-- [ ] 11 · Database Indexes · [Database indexes article](https://lnkd.in/gCeshYVt)
-- [ ] 12 · Proxy Server · [Proxy server article](https://lnkd.in/gi8KnKS6)
+## 📚 Reading list
 
-</details>
+Topics and resources I want to read next. When I read one, I move it to the learning log.
 
 <details>
-<summary><b>✅ Done (2)</b></summary>
+<summary><b>Show reading list (12)</b></summary>
 
-- [x] 01 · [Database Types](notes/01-database.md) · 2026-11-06
-- [x] 02 · [Horizontal vs Vertical Scaling](notes/02-horizontal-vs-vertical-scaling.md) · 2026-11-06
+| Topic | Resource |
+|---|---|
+| Caching | [Caching article](https://lnkd.in/gC9piQbJ) |
+| Distributed Caching | [Distributed caching article](https://lnkd.in/g7WKydNg) |
+| Load Balancing | [Load balancing article](https://lnkd.in/gQaa8sXK) |
+| SQL vs NoSQL | [SQL vs NoSQL article](https://lnkd.in/g3WC_yxn) |
+| Database Scaling | [Database scaling article](https://lnkd.in/gAXpSyWQ) |
+| Data Replication | [Data replication article](https://lnkd.in/gVAJxTpS) |
+| Data Redundancy | [Data redundancy article](https://lnkd.in/gNN7TF7n) |
+| Database Sharding | [Database sharding article](https://lnkd.in/gMqqc6x9) |
+| Database Indexes | [Database indexes article](https://lnkd.in/gCeshYVt) |
+| Proxy Server | [Proxy server article](https://lnkd.in/gi8KnKS6) |
+| Design Ticketmaster | Resource to be added |
+| Design Tinder | Resource to be added |
 
 </details>
 
-<details>
-<summary><b>🏗️ Design problems, later (2)</b></summary>
-
-- [ ] Design Ticketmaster
-- [ ] Design Tinder
-
-</details>
+**To add something:** add a row with the topic and a descriptive link, and update the count in "Show reading list (N)".
 
 ## ✍️ Adding a topic
 
-1. Copy `TEMPLATE.md` to `notes/NN-topic-name.md` (for example, `notes/03-caching.md`).
+1. Copy `TEMPLATE.md` to `notes/topic-name.md` (lowercase, words joined with dashes, for example `notes/caching.md`).
 2. Fill in the sections with short bullets. Add a diagram or table when it makes the idea clearer.
-3. **Update the tracker in one move:** cut the topic's line from **To do** and paste it into **Done**, then change it to this format:
+3. Remove it from the reading list (if it was there) and add a row to the **top** of the learning log:
 
    ```markdown
-   - [x] 03 · [Caching](notes/03-caching.md) · 2026-11-08
+   | 2026-11-08 | [Caching](notes/caching.md) | ✍️ In my own words · 🛠️ Try it |
    ```
 
-4. Update the counts: **Progress** (and fill one more `▓` in the bar), **To do (N)** and **Done (N)**.
+4. When you finish a section later, remove it from **Still to finish**. When nothing is left, write `—`.
 5. Add any new terms to the [glossary](GLOSSARY.md).
-6. Commit with a message like `Add 03 caching notes`.
+6. Commit with a message like `Add caching notes`.
 
 **Hidden prompts:** the template has reminders in `<!-- comments -->`. You see them while editing, but they don't show on the page.
 
@@ -91,5 +90,5 @@ My notes from learning system design, one topic at a time. Each note is short an
 - **Every diagram has `accTitle` and `accDescr`** inside the Mermaid code (screen readers read these), plus a short **text version** under the diagram.
 - **Link text says where it goes**, like "Caching article", never "click here" or "link".
 - **Every table has a header row**, and no header cell is left blank.
-- **Meaning never depends on color or emoji alone.** Status is a checkbox plus words.
+- **Meaning never depends on color or emoji alone.** Every emoji in the learning log sits next to words.
 - **Plain language:** short sentences, and acronyms are spelled out the first time they appear.
