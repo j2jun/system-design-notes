@@ -14,6 +14,13 @@
 - [GeeksforGeeks: Horizontal and Vertical Scaling](https://www.geeksforgeeks.org/system-design/system-design-horizontal-and-vertical-scaling/)
 - The original task link didn't work, so I used this one instead.
 
+## ✍️ In my own words
+
+<!-- Write this yourself BEFORE reading the polished notes or asking AI.
+     Pretend you're explaining it to a teammate in 30 seconds. 2–3 sentences. -->
+
+_✏️ To be written by me._
+
 ## 🗺️ Diagram
 
 ```mermaid
@@ -57,6 +64,10 @@ flowchart LR
 - **Vertical:** a small app is slow, so you upgrade its server from 8 GB to 32 GB of RAM.
 - **Horizontal:** an online store adds more web servers before a big sale, then removes them afterward.
 - **Analogy:** vertical = replacing your car with a bigger truck. Horizontal = adding more cars to the fleet.
+
+**From my own work:**
+
+- <!-- Add a real example: did a service you worked on scale out with more ECS tasks, or did you resize an instance? -->_✏️ To be added by me._
 
 ## 🎯 When to use it
 
@@ -103,11 +114,51 @@ flowchart TD
 - **Horizontal:** an **Auto Scaling group** of EC2 instances behind an **Application Load Balancer (ALB)**, and **RDS read replicas** to spread read traffic.
 - **Managed services that scale out for you:** DynamoDB, S3 (Simple Storage Service) and Lambda handle horizontal scaling automatically.
 
+## 🛠️ Try it
+
+- [ ] Task: in the AWS console, look at an EC2 instance's "Change instance type" option (vertical), then read how an Auto Scaling group adds instances (horizontal). No need to launch anything paid.
+- What I saw:
+
 ## 🎤 Interview one-liner
 
 > "Vertical scaling means upgrading one machine. It's simple but has a ceiling and a single point of failure. Horizontal scaling means adding machines behind a load balancer. It scales further and allows redundancy, but the app has to be stateless and data has to stay consistent. In practice I'd scale stateless web servers horizontally and often scale the database vertically first, adding read replicas or sharding when one machine isn't enough."
+
+## 🧠 Self-check
+
+1. Your single server is maxed out, and the app can't go down even for a restart. Which scaling?
+   <details><summary>Answer</summary>
+
+   Horizontal: add servers behind a load balancer, so you add capacity without downtime and survive one server failing.
+
+   </details>
+
+2. What must be true about an app before you can scale it horizontally?
+   <details><summary>Answer</summary>
+
+   It should be stateless, so any server can handle any request. Sessions go in a shared store like Redis.
+
+   </details>
+
+3. Name one AWS way to scale up and one to scale out.
+   <details><summary>Answer</summary>
+
+   Up: change the EC2 instance type or RDS instance class. Out: an Auto Scaling group behind an Application Load Balancer, or RDS read replicas.
+
+   </details>
+
+## 🔗 Related topics
+
+- [01. Database Types](01-database.md)
+- 05\. Load Balancing (coming soon)
+- 10\. Database Sharding (coming soon)
 
 ## ❓ Questions I still have
 
 - How do you keep user sessions working when requests hit different servers? (Sticky sessions vs. storing sessions in Redis.)
 - When does a database need sharding instead of a bigger machine? (See topic 10.)
+
+## 🔁 Review log
+
+| Date | What I added or changed |
+|---|---|
+| 2026-11-06 | First notes |
