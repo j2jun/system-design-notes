@@ -2,11 +2,14 @@
 
 My notes from learning system design, one topic at a time. Each note is short and simple: what it is, examples, when to use it, and the trade-offs.
 
-**How I use this repo:** read a topic, copy [the note template](TEMPLATE.md) into the `notes` folder, fill it in, then tick the box below.
+**How I use this repo:** read a topic, copy [the note template](TEMPLATE.md) into the `notes` folder, fill it in, then tick the box below. Terms are collected in the [glossary](GLOSSARY.md).
+
+> [!NOTE]
+> **How these notes are made:** I write the "In my own words" sections, key takeaways and "Try it" results myself. AI helps me organize, format and draw diagrams.
 
 ## 📊 Tracker
 
-**Progress: 2 of 12 fundamentals done** · click a section to open or close it
+**Progress:** `▓▓░░░░░░░░░░` **2 of 12 fundamentals done** · click a section to open or close it
 
 <details open>
 <summary><b>📋 To do (10)</b></summary>
@@ -50,8 +53,13 @@ My notes from learning system design, one topic at a time. Each note is short an
    - [x] 03 · [Caching](notes/03-caching.md) · 2026-11-08
    ```
 
-4. Update the three counts: **Progress**, **To do (N)** and **Done (N)**.
-5. Commit with a message like `Add 03 caching notes`.
+4. Update the counts: **Progress** (and fill one more `▓` in the bar), **To do (N)** and **Done (N)**.
+5. Add any new terms to the [glossary](GLOSSARY.md).
+6. Commit with a message like `Add 03 caching notes`.
+
+**Hidden prompts:** the template has reminders in `<!-- comments -->`. You see them while editing, but they don't show on the page.
+
+**When I review a note later:** add a row to its 🔁 Review log, answer a ❓ question, or finish its 🛠️ Try it.
 
 ## 🎨 Note style (keep every note consistent)
 
@@ -62,14 +70,19 @@ My notes from learning system design, one topic at a time. Each note is short an
 | 📌 | Key takeaway (the "Important" box at the top) |
 | 📅 | Date |
 | 📚 | Resources |
+| ✍️ | In my own words |
 | 🗺️ | Diagram |
 | 🔑 | Key ideas |
 | 🧪 | Examples |
 | 🎯 | When to use it |
 | ⚖️ | Trade-offs |
 | ☁️ | On AWS |
+| 🛠️ | Try it |
 | 🎤 | Interview one-liner |
+| 🧠 | Self-check |
+| 🔗 | Related topics |
 | ❓ | Questions I still have |
+| 🔁 | Review log |
 
 **Accessibility:**
 
