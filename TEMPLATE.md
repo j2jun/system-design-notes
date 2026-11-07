@@ -1,52 +1,59 @@
 # NN. Topic Name
 
-**Date:** YYYY-MM-DD
-**Resources:**
-- [Title](link)
+> [!IMPORTANT]
+> **📌 Key takeaway:** one sentence that sums up the topic in plain words.
+>
+> - The most important point
+> - The second most important point
+> - The one thing to remember for an interview
 
-## In one sentence
+📅 **Date:** YYYY-MM-DD
 
-What is it, in plain words?
+📚 **Resources:**
 
-## Diagram (optional)
+- [Descriptive link title, not "click here"](link)
 
-Use a simple Mermaid diagram if it helps. GitHub draws it automatically.
+## 🗺️ Diagram
 
 ```mermaid
 flowchart LR
+    accTitle: Short title of the diagram
+    accDescr: One or two sentences describing what the diagram shows, for screen readers.
     A[Client] --> B[Component] --> C[(Database)]
 ```
 
-## Key ideas
+**Text version:** Client sends a request to the component, which reads from the database.
+
+## 🔑 Key ideas
 
 -
 -
 -
 
-## Examples
+## 🧪 Examples
 
 -
 -
 
-## When to use it
+## 🎯 When to use it
 
 -
 -
 
-## Trade-offs
+## ⚖️ Trade-offs
 
-| Pros | Cons |
-|---|---|
-|  |  |
+| Aspect | Option A | Option B |
+|---|---|---|
+|  |  |  |
 
-## On AWS
+## ☁️ On AWS
 
-- Which AWS service does this map to?
+- Which AWS service does this map to? Spell out the name the first time, e.g. "RDS (Relational Database Service)".
 
-## Interview one-liner
+## 🎤 Interview one-liner
 
 > How I'd explain it in 2–3 sentences.
 
-## Questions I still have
+## ❓ Questions I still have
 
 -
