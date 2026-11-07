@@ -1,4 +1,4 @@
-# 02. Horizontal vs Vertical Scaling
+# Horizontal vs Vertical Scaling
 
 > [!IMPORTANT]
 > **📌 Key takeaway:** vertical scaling makes one machine bigger; horizontal scaling adds more machines behind a load balancer.
@@ -148,14 +148,14 @@ flowchart TD
 
 ## 🔗 Related topics
 
-- [01. Database Types](01-database.md)
-- 05\. Load Balancing (coming soon)
-- 10\. Database Sharding (coming soon)
+- [Database Types](database-types.md)
+- Load Balancing (not written yet)
+- Database Sharding (not written yet)
 
 ## ❓ Questions I still have
 
 - How do you keep user sessions working when requests hit different servers? (Sticky sessions vs. storing sessions in Redis.)
-- When does a database need sharding instead of a bigger machine? (See topic 10.)
+- When does a database need sharding instead of a bigger machine? (Future note: Database Sharding.)
 
 ## 🔁 Review log
 
