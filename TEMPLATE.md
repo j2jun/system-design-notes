@@ -1,4 +1,4 @@
-# NN. Topic Name
+# Topic Name
 
 > [!IMPORTANT]
 > **📌 Key takeaway:** one sentence that sums up the topic in plain words.
@@ -89,7 +89,7 @@ flowchart LR
 
 ## 🔗 Related topics
 
-- [NN. Topic](NN-topic.md)
+- [Topic Name](topic-name.md)
 
 ## ❓ Questions I still have
 
