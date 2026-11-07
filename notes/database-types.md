@@ -1,4 +1,4 @@
-# 01. Database Types
+# Database Types
 
 > [!IMPORTANT]
 > **📌 Key takeaway:** there's no single best database; pick the one whose data model matches how your data looks and how you'll query it.
@@ -136,15 +136,15 @@ flowchart TD
 
 ## 🔗 Related topics
 
-- [02. Horizontal vs Vertical Scaling](02-horizontal-vs-vertical-scaling.md)
-- 06\. SQL vs NoSQL (coming soon)
-- 10\. Database Sharding (coming soon)
+- [Horizontal vs Vertical Scaling](horizontal-vs-vertical-scaling.md)
+- SQL vs NoSQL (not written yet)
+- Database Sharding (not written yet)
 
 ## ❓ Questions I still have
 
 - How do DynamoDB partition keys and sort keys work, and how do I choose them?
-- When does a relational database need sharding? (See topic 10.)
-- What exactly is "eventual consistency", and when is it acceptable? (See topic 08.)
+- When does a relational database need sharding? (Future note: Database Sharding.)
+- What exactly is "eventual consistency", and when is it acceptable? (Future note: Data Replication.)
 
 ## 🔁 Review log
 
