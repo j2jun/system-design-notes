@@ -41,9 +41,9 @@ My notes from learning system design, one topic at a time. Each note is short an
 
 | Emoji | Section |
 |---|---|
+| 📌 | Key takeaway (the "Important" box at the top) |
 | 📅 | Date |
 | 📚 | Resources |
-| 💡 | In one sentence |
 | 🗺️ | Diagram |
 | 🔑 | Key ideas |
 | 🧪 | Examples |
@@ -56,6 +56,7 @@ My notes from learning system design, one topic at a time. Each note is short an
 **Accessibility:**
 
 - **Emoji are decoration only.** They never replace words, and there's only one per heading so screen readers don't read a long string of emoji names.
+- **The key takeaway uses GitHub's `[!IMPORTANT]` box**, which shows the word "Important" as a label, so its meaning doesn't depend on color. Keep it to one sentence and at most 3 bullets.
 - **Every diagram has `accTitle` and `accDescr`** inside the Mermaid code (screen readers read these), plus a short **text version** under the diagram.
 - **Link text says where it goes**, like "Caching article", never "click here" or "link".
 - **Every table has a header row**, and no header cell is left blank.
