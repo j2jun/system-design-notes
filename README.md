@@ -6,12 +6,11 @@ My notes from learning system design, one topic at a time. Each note is short an
 
 ## 📊 Tracker
 
-**Progress: 1 of 12 fundamentals done**
+**Progress: 2 of 12 fundamentals done** · click a section to open or close it
 
-### 🧱 Fundamentals
+<details open>
+<summary><b>📋 To do (10)</b></summary>
 
-- [ ] 01 · Database · [Database article](https://lnkd.in/gti8gjpz)
-- [x] 02 · [Horizontal vs Vertical Scaling](notes/02-horizontal-vs-vertical-scaling.md) · done 2026-11-06
 - [ ] 03 · Caching · [Caching article](https://lnkd.in/gC9piQbJ)
 - [ ] 04 · Distributed Caching · [Distributed caching article](https://lnkd.in/g7WKydNg)
 - [ ] 05 · Load Balancing · [Load balancing article](https://lnkd.in/gQaa8sXK)
@@ -23,19 +22,38 @@ My notes from learning system design, one topic at a time. Each note is short an
 - [ ] 11 · Database Indexes · [Database indexes article](https://lnkd.in/gCeshYVt)
 - [ ] 12 · Proxy Server · [Proxy server article](https://lnkd.in/gi8KnKS6)
 
-### 🏗️ Design problems (later)
+</details>
+
+<details>
+<summary><b>✅ Done (2)</b></summary>
+
+- [x] 01 · [Database Types](notes/01-database.md) · 2026-11-06
+- [x] 02 · [Horizontal vs Vertical Scaling](notes/02-horizontal-vs-vertical-scaling.md) · 2026-11-06
+
+</details>
+
+<details>
+<summary><b>🏗️ Design problems, later (2)</b></summary>
 
 - [ ] Design Ticketmaster
 - [ ] Design Tinder
+
+</details>
 
 ## ✍️ Adding a topic
 
 1. Copy `TEMPLATE.md` to `notes/NN-topic-name.md` (for example, `notes/03-caching.md`).
 2. Fill in the sections with short bullets. Add a diagram or table when it makes the idea clearer.
-3. In the tracker: change `[ ]` to `[x]`, link the topic name to the note, add "done" and the date, and update the progress count.
-4. Commit with a message like `Add 03 caching notes`.
+3. **Update the tracker in one move:** cut the topic's line from **To do** and paste it into **Done**, then change it to this format:
 
-## ♿ Note style (keep every note consistent)
+   ```markdown
+   - [x] 03 · [Caching](notes/03-caching.md) · 2026-11-08
+   ```
+
+4. Update the three counts: **Progress**, **To do (N)** and **Done (N)**.
+5. Commit with a message like `Add 03 caching notes`.
+
+## 🎨 Note style (keep every note consistent)
 
 **Emoji:** one emoji at the start of each section heading, always the same set:
 
