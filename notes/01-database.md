@@ -137,8 +137,8 @@ flowchart TD
 ## 🔗 Related topics
 
 - [02. Horizontal vs Vertical Scaling](02-horizontal-vs-vertical-scaling.md)
-- 06. SQL vs NoSQL (coming soon)
-- 10. Database Sharding (coming soon)
+- 06\. SQL vs NoSQL (coming soon)
+- 10\. Database Sharding (coming soon)
 
 ## ❓ Questions I still have
 
