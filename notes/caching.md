@@ -18,7 +18,15 @@
 <!-- Write this yourself BEFORE reading the polished notes or asking AI.
      Pretend you're explaining it to a teammate in 30 seconds. 2–3 sentences. -->
 
-_✏️ To be written by me._
+> "Cache is a local temporary storage that shows on the website, but hasn't yet changed in the server side."
+
+> [!NOTE]
+> **Correction (reviewed 2026-11-09):** this describes my registration page well, but not caching in general.
+>
+> - **"Local":** a cache can be local (browser, app memory), but it can also be a shared server like Redis or a CDN (Content Delivery Network) far away.
+> - **"Shows on the website":** caches exist at every layer (browser, CDN, app server, database, CPU), and most are never seen by users.
+> - **"Hasn't yet changed in the server side":** usually backwards. A cache normally holds a **copy of data the server already has**, kept somewhere faster; the usual risk is that the copy is *older* than the server. My page was the less common case where the cache was *ahead* of the server.
+> - **Better definition:** a cache is a small, fast, temporary copy of data, kept closer to whoever reads it, so they don't have to go to the slower source of truth every time.
 
 ## 🗺️ Diagram
 
@@ -182,7 +190,9 @@ flowchart TB
 
 **From my own work:**
 
-- _✏️ To be written by me._
+- **Self-service registration page:** after a user registered, the changes were saved to the backend services, but they were applied asynchronously by an ECS (Elastic Container Service) job that ran the next day. To avoid showing old data until then, I cached the user's pending changes **in the browser** and showed them on the page.
+  - This is **read-your-own-writes** on top of an **eventually consistent** backend: the user sees their own changes right away, and the backend catches up later.
+  - It's close to write-back (the cache holds the newer value first), but safer: the real change was already saved in the services, so losing the browser cache (cleared storage, another device) would only make the page look stale until the job ran, with no data lost.
 
 ## 🎯 When to use it
 
@@ -263,3 +273,4 @@ flowchart TB
 | Date | What I added or changed |
 |---|---|
 | 2026-11-09 | First notes |
+| 2026-11-09 | Added my own words (with corrections) and my registration-page example |

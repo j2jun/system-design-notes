@@ -13,7 +13,7 @@ What I learned and when, newest first. **Still to finish** lists the parts of a 
 
 | Date | Topic | Still to finish |
 |---|---|---|
-| 2026-11-09 | [Caching](notes/caching.md) | ✍️ In my own words · 🧪 Example from my work · 🛠️ Try it |
+| 2026-11-09 | [Caching](notes/caching.md) | 🛠️ Try it |
 | 2026-11-06 | [Horizontal vs Vertical Scaling](notes/horizontal-vs-vertical-scaling.md) | ✍️ In my own words · 🧪 Example from my work · 🛠️ Try it |
 | 2026-11-06 | [Database Types](notes/database-types.md) | ✍️ In my own words · 🛠️ Try it |
 
