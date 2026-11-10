@@ -5,7 +5,7 @@ My notes from learning system design, one topic at a time. Each note is short an
 **How I use this repo:** read a topic, copy [the note template](TEMPLATE.md) into the `notes` folder, fill it in, then add it to the learning log below. Terms are collected in the [glossary](GLOSSARY.md).
 
 > [!NOTE]
-> **How these notes are made:** I write the "In my own words" sections, key takeaways and "Try it" results myself. AI helps me organize, format and draw diagrams.
+> **How these notes are made:** I write the key takeaways myself. AI helps me organize, format and draw diagrams.
 
 ## 📅 Learning log
 
@@ -57,7 +57,7 @@ Topics and resources I want to read next. When I read one, I move it to the lear
 
 **Hidden prompts:** the template has reminders in `<!-- comments -->`. You see them while editing, but they don't show on the page.
 
-**When I review a note later:** add a row to its 🔁 Review log, answer a ❓ question, or finish its 🛠️ Try it.
+**When I review a note later:** add a row to its 🔁 Review log or answer a ❓ question.
 
 ## 🎨 Note style (keep every note consistent)
 
@@ -68,14 +68,12 @@ Topics and resources I want to read next. When I read one, I move it to the lear
 | 📌 | Key takeaway (the "Important" box at the top) |
 | 📅 | Date |
 | 📚 | Resources |
-| ✍️ | In my own words |
 | 🗺️ | Diagram |
 | 🔑 | Key ideas |
 | 🧪 | Examples |
 | 🎯 | When to use it |
 | ⚖️ | Trade-offs |
 | ☁️ | On AWS |
-| 🛠️ | Try it |
 | 🎤 | Interview one-liner |
 | 🧠 | Self-check |
 | 🔗 | Related topics |

@@ -13,13 +13,6 @@
 
 - [AlgoMaster: 15 Types of Databases and When to Use Them](https://blog.algomaster.io/p/15-types-of-databases)
 
-## ✍️ In my own words
-
-<!-- Write this yourself BEFORE reading the polished notes or asking AI.
-     Pretend you're explaining it to a teammate in 30 seconds. 2–3 sentences. -->
-
-_✏️ To be written by me._
-
 ## 🗺️ Diagram
 
 ```mermaid
@@ -67,11 +60,6 @@ flowchart TD
 | Object-oriented | Objects, like in Java or Python | Apps built around complex objects | ObjectDB | — |
 | Embedded | Runs inside the app itself | Mobile apps, desktop apps, games | SQLite, RocksDB | — |
 
-**From my own work:**
-
-- **Relational:** at CITMIT I tuned MySQL queries and indexes to make them faster.
-- **Key-value + blob:** at Prime Video I migrated service metadata for ~10,000 services from S3 to DynamoDB, because the data changed one item at a time.
-
 ## 🎯 When to use it
 
 - **Relational** when data has clear structure and relationships, and correctness matters most (banking, orders, HR data).
@@ -101,11 +89,6 @@ flowchart TD
 - **ElastiCache** (Redis or Memcached) for in-memory caching.
 - **S3 (Simple Storage Service)** for blobs and data lakes; **Redshift** for analytics on large structured data.
 - **OpenSearch** for text and vector search; **Neptune** for graphs; **Timestream** for time-series.
-
-## 🛠️ Try it
-
-- [ ] Task: create a DynamoDB table in the AWS console (free tier), add 3 items, and look one up by its key. Then do the same lookup in a small SQLite or MySQL table.
-- What I saw:
 
 ## 🎤 Interview one-liner
 

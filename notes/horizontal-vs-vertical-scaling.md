@@ -14,13 +14,6 @@
 - [GeeksforGeeks: Horizontal and Vertical Scaling](https://www.geeksforgeeks.org/system-design/system-design-horizontal-and-vertical-scaling/)
 - The original task link didn't work, so I used this one instead.
 
-## ✍️ In my own words
-
-<!-- Write this yourself BEFORE reading the polished notes or asking AI.
-     Pretend you're explaining it to a teammate in 30 seconds. 2–3 sentences. -->
-
-_✏️ To be written by me._
-
 ## 🗺️ Diagram
 
 ```mermaid
@@ -64,10 +57,6 @@ flowchart LR
 - **Vertical:** a small app is slow, so you upgrade its server from 8 GB to 32 GB of RAM.
 - **Horizontal:** an online store adds more web servers before a big sale, then removes them afterward.
 - **Analogy:** vertical = replacing your car with a bigger truck. Horizontal = adding more cars to the fleet.
-
-**From my own work:**
-
-- <!-- Add a real example: did a service you worked on scale out with more ECS tasks, or did you resize an instance? -->_✏️ To be added by me._
 
 ## 🎯 When to use it
 
@@ -113,11 +102,6 @@ flowchart TD
 - **Vertical:** change an EC2 (Elastic Compute Cloud) instance type, for example `t3.medium` → `m5.xlarge`, or move an RDS (Relational Database Service) database to a larger instance class.
 - **Horizontal:** an **Auto Scaling group** of EC2 instances behind an **Application Load Balancer (ALB)**, and **RDS read replicas** to spread read traffic.
 - **Managed services that scale out for you:** DynamoDB, S3 (Simple Storage Service) and Lambda handle horizontal scaling automatically.
-
-## 🛠️ Try it
-
-- [ ] Task: in the AWS console, look at an EC2 instance's "Change instance type" option (vertical), then read how an Auto Scaling group adds instances (horizontal). No need to launch anything paid.
-- What I saw:
 
 ## 🎤 Interview one-liner
 

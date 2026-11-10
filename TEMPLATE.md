@@ -15,11 +15,6 @@
 
 - [Descriptive link title, not "click here"](link)
 
-## ✍️ In my own words
-
-<!-- Write this yourself BEFORE reading polished notes or asking AI.
-     Pretend you're explaining it to a teammate in 30 seconds. 2–3 sentences. -->
-
 ## 🗺️ Diagram
 
 <!-- Optional. Keep it small. Always include accTitle, accDescr and a text version. -->
@@ -44,12 +39,6 @@ flowchart LR
 -
 -
 
-<!-- Add at least one example from your own work if you can (Prime Video, CITMIT, Army, projects). -->
-
-**From my own work:**
-
--
-
 ## 🎯 When to use it
 
 -
@@ -64,13 +53,6 @@ flowchart LR
 ## ☁️ On AWS
 
 - Which AWS service does this map to? Spell out the name the first time, e.g. "RDS (Relational Database Service)".
-
-## 🛠️ Try it
-
-<!-- One small hands-on step (10–20 min). Write what you did and what you saw. -->
-
-- [ ] Task:
-- What I saw:
 
 ## 🎤 Interview one-liner
 

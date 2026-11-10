@@ -14,13 +14,6 @@
 - [Redis glossary: Distributed Caching](https://redis.io/glossary/distributed-caching/)
 - Background: my [Caching](caching.md) note (layers, write policies, eviction).
 
-## ✍️ In my own words
-
-<!-- Write this yourself BEFORE reading the polished notes or asking AI.
-     Pretend you're explaining it to a teammate in 30 seconds. 2–3 sentences. -->
-
-_✏️ To be written by me._
-
 ## 🗺️ Diagram
 
 **Local vs distributed.** With only local caches, a user in Asia waits on a server in North America, and each server keeps its own (possibly different) copy. With a distributed cache, every region has cache servers and users read from the nearest one.
@@ -133,12 +126,6 @@ flowchart LR
 - **E-commerce:** product details cached in several regions so each shopper reads from the nearest cache server.
 - **Streaming platform:** for a big movie release, movie metadata is partitioned across Redis servers in several regions, listings refresh with a TTL (Time To Live), and the team watches the hit rate during the traffic spike.
 
-**From my own work:**
-
-<!-- Compare with the registration page in caching.md: was that cache local or distributed? -->
-
-- _✏️ To be written by me._
-
 ## 🎯 When to use it
 
 - The app runs on **many servers** behind a load balancer and they must see the **same** cached data.
@@ -177,11 +164,6 @@ flowchart LR
 - **MemoryDB**: Redis-compatible and durable, for when the cache is also the main store.
 - **DAX (DynamoDB Accelerator)**: a managed cache cluster in front of DynamoDB.
 - **ElastiCache Global Datastore**: copies a Redis/Valkey cache to other AWS Regions, so users read from the nearest one.
-
-## 🛠️ Try it
-
-- [ ] Task: in a few lines of Python, put 1,000 keys on 3 "servers" with `hash(key) % 3`, then switch to `% 4` and count how many keys moved. Then do the same with a simple consistent-hashing ring (sorted list of server hashes + `bisect`) and compare.
-- What I saw:
 
 ## 🎤 Interview one-liner
 
