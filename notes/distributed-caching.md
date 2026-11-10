@@ -28,7 +28,7 @@ _✏️ To be written by me._
 ```mermaid
 flowchart TB
     accTitle: Local cache versus distributed cache
-    accDescr: On the left, two app servers each keep their own local cache, so data is duplicated and can differ, and a user in Asia must reach a server in North America. On the right, a distributed cache has cache servers in North America, Europe and Asia; users are served by the nearest cache cluster, and the clusters sit in front of one shared database.
+    accDescr: With local caching only, two app servers each keep their own local cache, so data is duplicated and can differ, and a user in Asia must reach a server in North America. With distributed caching, cache servers run in North America, Europe and Asia; users are served by the nearest cache cluster, and the clusters sit in front of one shared database.
     subgraph L[Local caching only]
         UA1[User in Asia] -->|long trip| S1[App server, North America<br/>+ own cache]
         UB1[User in US] --> S2[App server, North America<br/>+ own cache]
@@ -62,18 +62,28 @@ flowchart TB
 
 The simple way, `server = hash(key) % N`, breaks when N changes: add one server and almost every key moves to a different server, so the cache is suddenly empty (a flood of misses). **Consistent hashing** fixes this.
 
+Think of the ring as a clock face. Each server owns the slice of the ring just before it, and every key in that slice is stored on that server. Adding Server D between A and B only splits **B's** slice; A's and C's keys don't move.
+
 ```mermaid
-flowchart LR
-    accTitle: Consistent hashing ring
-    accDescr: Keys and cache servers are both placed on a ring by their hash. Each key belongs to the next server clockwise. Key user 42 lands before Server B, so Server B owns it. When a new Server D is added between Server A and Server B, only the keys in that one section move to Server D; all other keys stay where they were.
-    K1([key: user:42]) -->|next server clockwise| B[Server B]
-    K2([key: product:7]) -->|next server clockwise| C[Server C]
-    K3([key: cart:9]) -->|next server clockwise| A[Server A]
-    A -->|ring continues| B -->|ring continues| C -->|ring continues| A
-    New[New Server D<br/>added between A and B] -.->|takes over only the keys<br/>between A and D| B
+pie showData title Before: 3 servers share the ring (% of keys)
+    accTitle: Hash ring ownership before adding a server
+    accDescr: Three servers each own about a third of the hash ring. Server A owns 34 percent of keys, Server B 33 percent and Server C 33 percent.
+    "Server A" : 34
+    "Server B" : 33
+    "Server C" : 33
 ```
 
-**Text version:** imagine a ring. Each server and each key gets a spot on it from its hash, and a key belongs to the next server clockwise. Adding or removing a server only moves the keys in its section of the ring; everything else stays put.
+```mermaid
+pie showData title After adding Server D (% of keys)
+    accTitle: Hash ring ownership after adding Server D
+    accDescr: Server D is added between Server A and Server B and takes over half of Server B's slice. Server A still owns 34 percent and Server C 33 percent, unchanged. Server B now owns 17 percent and Server D 16 percent. Only the 16 percent of keys that moved to D change servers.
+    "Server A (unchanged)" : 34
+    "Server B (gave half to D)" : 17
+    "Server C (unchanged)" : 33
+    "Server D (new)" : 16
+```
+
+**Text version:** each server and each key gets a spot on a ring from its hash, and a key belongs to the next server clockwise. Before: A, B and C each own about a third of the keys. After adding D between A and B, D takes half of B's slice (16% of keys); A's and C's keys stay where they were. With `hash % N`, going from 3 to 4 servers would move about 75% of keys instead.
 
 | Method | How a key finds its server | When a server is added or removed |
 |---|---|---|
