@@ -9,14 +9,14 @@ My notes from learning system design, one topic at a time. Each note is short an
 
 ## 📅 Learning log
 
-What I learned and when, newest first.
+What I learned and when, newest first. **Still to finish** lists the parts of a note I haven't done yet; it's empty once the note is complete.
 
-| Date | Topic |
-|---|---|
-| 2026-11-10 | [Distributed Caching](notes/distributed-caching.md) |
-| 2026-11-09 | [Caching](notes/caching.md) |
-| 2026-11-06 | [Horizontal vs Vertical Scaling](notes/horizontal-vs-vertical-scaling.md) |
-| 2026-11-06 | [Database Types](notes/database-types.md) |
+| Date | Topic | Still to finish |
+|---|---|---|
+| 2026-11-10 | [Distributed Caching](notes/distributed-caching.md) | ✍️ In my own words · 🧪 Example from my work · 🛠️ Try it |
+| 2026-11-09 | [Caching](notes/caching.md) | 🛠️ Try it |
+| 2026-11-06 | [Horizontal vs Vertical Scaling](notes/horizontal-vs-vertical-scaling.md) | ✍️ In my own words · 🧪 Example from my work · 🛠️ Try it |
+| 2026-11-06 | [Database Types](notes/database-types.md) | ✍️ In my own words · 🛠️ Try it |
 
 ## 📚 Reading list
 
@@ -49,11 +49,12 @@ Topics and resources I want to read next. When I read one, I move it to the lear
 3. Remove it from the reading list (if it was there) and add a row to the **top** of the learning log:
 
    ```markdown
-   | 2026-11-08 | [Caching](notes/caching.md) |
+   | 2026-11-08 | [Caching](notes/caching.md) | ✍️ In my own words · 🛠️ Try it |
    ```
 
-4. Add any new terms to the [glossary](GLOSSARY.md).
-5. Commit with a message like `Add caching notes`.
+4. When you finish a section later, remove it from **Still to finish**. When nothing is left, write `—`.
+5. Add any new terms to the [glossary](GLOSSARY.md).
+6. Commit with a message like `Add caching notes`.
 
 **Hidden prompts:** the template has reminders in `<!-- comments -->`. You see them while editing, but they don't show on the page.
 
@@ -87,5 +88,5 @@ Topics and resources I want to read next. When I read one, I move it to the lear
 - **Every diagram has `accTitle` and `accDescr`** inside the Mermaid code (screen readers read these), plus a short **text version** under the diagram.
 - **Link text says where it goes**, like "Caching article", never "click here" or "link".
 - **Every table has a header row**, and no header cell is left blank.
-- **Meaning never depends on color or emoji alone.**
+- **Meaning never depends on color or emoji alone.** Every emoji in the learning log sits next to words.
 - **Plain language:** short sentences, and acronyms are spelled out the first time they appear.
