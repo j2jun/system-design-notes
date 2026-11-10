@@ -13,6 +13,7 @@ What I learned and when, newest first. **Still to finish** lists the parts of a 
 
 | Date | Topic | Still to finish |
 |---|---|---|
+| 2026-11-10 | [Distributed Caching](notes/distributed-caching.md) | ✍️ In my own words · 🧪 Example from my work · 🛠️ Try it |
 | 2026-11-09 | [Caching](notes/caching.md) | 🛠️ Try it |
 | 2026-11-06 | [Horizontal vs Vertical Scaling](notes/horizontal-vs-vertical-scaling.md) | ✍️ In my own words · 🧪 Example from my work · 🛠️ Try it |
 | 2026-11-06 | [Database Types](notes/database-types.md) | ✍️ In my own words · 🛠️ Try it |
@@ -22,11 +23,10 @@ What I learned and when, newest first. **Still to finish** lists the parts of a 
 Topics and resources I want to read next. When I read one, I move it to the learning log.
 
 <details>
-<summary><b>Show reading list (11)</b></summary>
+<summary><b>Show reading list (10)</b></summary>
 
 | Topic | Resource |
 |---|---|
-| Distributed Caching | [Distributed caching article](https://lnkd.in/g7WKydNg) |
 | Load Balancing | [Load balancing article](https://lnkd.in/gQaa8sXK) |
 | SQL vs NoSQL | [SQL vs NoSQL article](https://lnkd.in/g3WC_yxn) |
 | Database Scaling | [Database scaling article](https://lnkd.in/gAXpSyWQ) |

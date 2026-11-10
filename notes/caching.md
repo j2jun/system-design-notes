@@ -257,7 +257,7 @@ flowchart TB
 
 - [Database Types](database-types.md) (Redis and Memcached are in-memory key-value stores)
 - [Horizontal vs Vertical Scaling](horizontal-vs-vertical-scaling.md)
-- Distributed Caching (not written yet)
+- [Distributed Caching](distributed-caching.md)
 - Load Balancing (not written yet)
 - Consistent Hashing (not written yet)
 
@@ -266,7 +266,7 @@ flowchart TB
 - What is cache-aside (lazy loading), and how is it different from the three write policies?
 - How do I choose a good TTL (Time To Live)?
 - What's a "thundering herd" (cache stampede), and how do you prevent it when a hot key expires?
-- How does consistent hashing keep most keys in place when a node is added or removed? (Future note: Distributed Caching.)
+- How does consistent hashing keep most keys in place when a node is added or removed? (Answered in [Distributed Caching](distributed-caching.md).)
 
 ## 🔁 Review log
 
