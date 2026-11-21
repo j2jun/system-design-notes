@@ -133,7 +133,7 @@ flowchart TD
 ## 🔗 Related topics
 
 - [Database Types](database-types.md)
-- Load Balancing (not written yet)
+- [Load Balancing](load-balancing.md)
 - Database Sharding (not written yet)
 
 ## ❓ Questions I still have

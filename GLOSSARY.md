@@ -15,13 +15,17 @@ Short definitions of terms from my notes, in alphabetical order. Each links to t
 | Eventual consistency | Copies of data may differ for a short time, but they all catch up to the same value | [Database Types](notes/database-types.md) |
 | Eviction policy | The rule a full cache uses to choose what to remove, such as LRU (Least Recently Used) or LFU (Least Frequently Used) | [Caching](notes/caching.md) |
 | Horizontal scaling (scale out) | Adding more machines and spreading the work across them | [Horizontal vs Vertical Scaling](notes/horizontal-vs-vertical-scaling.md) |
-| Load balancer | A component that sends each incoming request to one of several servers | [Horizontal vs Vertical Scaling](notes/horizontal-vs-vertical-scaling.md) |
+| Health check | A regular test a load balancer runs on each server; servers that fail stop getting traffic | [Load Balancing](notes/load-balancing.md) |
+| Layer 4 / Layer 7 | Network layers a load balancer works at: Layer 4 sees only IP addresses and ports (network load balancer), Layer 7 reads the request itself, like HTTP headers and URLs (application load balancer) | [Load Balancing](notes/load-balancing.md) |
+| Least connections | A load balancing algorithm that sends each request to the server with the fewest open connections | [Load Balancing](notes/load-balancing.md) |
+| Load balancer | A component that sends each incoming request to one of several servers | [Horizontal vs Vertical Scaling](notes/horizontal-vs-vertical-scaling.md), [Load Balancing](notes/load-balancing.md) |
 | Local cache | A cache on one machine or inside one app, such as the browser cache or an in-memory map | [Distributed Caching](notes/distributed-caching.md) |
 | Locality of reference | Data that was used recently, or data near it, is likely to be used again soon | [Caching](notes/caching.md) |
 | LRU | Least Recently Used: an eviction policy that removes the item that hasn't been used for the longest time | [Caching](notes/caching.md) |
 | NoSQL | A family of non-relational databases (key-value, document, wide-column, graph) built for scale or flexibility | [Database Types](notes/database-types.md) |
 | Partitioning | Splitting data across servers so each one owns part of it (for databases, also called sharding) | [Distributed Caching](notes/distributed-caching.md) |
 | Polyglot persistence | Using several types of databases in one system, each for the job it's best at | [Database Types](notes/database-types.md) |
+| Round-robin | A load balancing algorithm that sends requests to servers in turn: 1, 2, 3, 1, 2, 3… | [Load Balancing](notes/load-balancing.md) |
 | Replication | Keeping copies of the same data on more than one server, so it survives a server failure | [Distributed Caching](notes/distributed-caching.md) |
 | Single point of failure | One part that, if it breaks, takes the whole system down | [Horizontal vs Vertical Scaling](notes/horizontal-vs-vertical-scaling.md) |
 | Stateless | A server that doesn't keep user data between requests, so any server can handle any request | [Horizontal vs Vertical Scaling](notes/horizontal-vs-vertical-scaling.md) |

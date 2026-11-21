@@ -232,7 +232,7 @@ flowchart TB
 - [Database Types](database-types.md) (Redis and Memcached are in-memory key-value stores)
 - [Horizontal vs Vertical Scaling](horizontal-vs-vertical-scaling.md)
 - [Distributed Caching](distributed-caching.md)
-- Load Balancing (not written yet)
+- [Load Balancing](load-balancing.md)
 - Consistent Hashing (not written yet)
 
 ## ❓ Questions I still have

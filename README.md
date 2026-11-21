@@ -13,6 +13,7 @@ What I learned and when, newest first. Each topic has one emoji that fits it.
 
 | Date | Topic |
 |---|---|
+| 2026-11-21 | ⚖️ [Load Balancing](notes/load-balancing.md) |
 | 2026-11-10 | 🌐 [Distributed Caching](notes/distributed-caching.md) |
 | 2026-11-09 | ⚡ [Caching](notes/caching.md) |
 | 2026-11-06 | 📈 [Horizontal vs Vertical Scaling](notes/horizontal-vs-vertical-scaling.md) |
@@ -23,11 +24,10 @@ What I learned and when, newest first. Each topic has one emoji that fits it.
 Topics and resources I want to read next. When I read one, I move it to the learning log.
 
 <details>
-<summary><b>Show reading list (10)</b></summary>
+<summary><b>Show reading list (9)</b></summary>
 
 | Topic | Resource |
 |---|---|
-| Load Balancing | [Load balancing article](https://lnkd.in/gQaa8sXK) |
 | SQL vs NoSQL | [SQL vs NoSQL article](https://lnkd.in/g3WC_yxn) |
 | Database Scaling | [Database scaling article](https://lnkd.in/gAXpSyWQ) |
 | Data Replication | [Data replication article](https://lnkd.in/gVAJxTpS) |
